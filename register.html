@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація — Особистий веб-сайт</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        form {
+            display: grid;
+            gap: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form div {
+            display: grid;
+            gap: 8px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #37474f;
+        }
+
+        input, select {
+            padding: 12px 14px;
+            border: 1px solid #cfd8dc;
+            border-radius: 10px;
+            font-size: 16px;
+            background: #fff;
+        }
+
+        input[type="submit"] {
+            background: linear-gradient(135deg, #00897b, #26a69a);
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background: linear-gradient(135deg, #00796b, #1e8d83);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Особистий веб-сайт Арсенія Гайдучика</h1>
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="about.html">Про мене</a>
+            <a href="practical.html">Практичні роботи</a>
+            <a href="laboratory.html">Лабораторні заняття</a>
+            <a href="register.html">Реєстрація</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Реєстрація користувача</h2>
+
+            <form action="https://webhook.site/794300ed-4b3b-4672-92cc-f4e6f50afe95" method="POST">
+                <div>
+                    <label for="first_name">Ім'я:</label>
+                    <input type="text" id="first_name" name="first_name" required>
+                </div>
+
+                <div>
+                    <label for="last_name">Прізвище:</label>
+                    <input type="text" id="last_name" name="last_name" required>
+                </div>
+
+                <div>
+                    <label for="email">Електронна пошта:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div>
+                    <label for="confirm_password">Підтвердження паролю:</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+
+                <div>
+                    <label for="birthdate">Дата народження:</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </div>
+
+                <div>
+                    <label for="gender">Стать:</label>
+                    <select id="gender" name="gender">
+                        <option value="">Оберіть стать...</option>
+                        <option value="male">Чоловіча</option>
+                        <option value="female">Жіноча</option>
+                        <option value="other">Інша</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="submit" value="Зареєструватися">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 Арсеній Гайдучик</p>
+    </footer>
+</body>
+</html>
